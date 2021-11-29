@@ -8,6 +8,7 @@ import './App.css';
 import './assets/base.scss';
 import Home from './pages/Home';
 import useStyles from './styles';
+import Error404 from './pages/404Error';
 
 function App() {
   const [activeArticle, setActiveArticle] = useState(0);
@@ -47,9 +48,12 @@ function App() {
     });
   }, []);
   return (
-    <>
-      <Home />
-    </>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="*" exact component={Error404} />
+      </Switch>
+    </Router>
   );
 }
 

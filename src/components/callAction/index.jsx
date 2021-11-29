@@ -1,91 +1,138 @@
 import React from 'react';
-import { Grid, Card, Button } from '@material-ui/core';
+import { Grid, Card, Container } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+// import logo1 from '../../assets/images/stock-logos/microsoft-icon.svg';
+import logo1 from '../../assets/images/stock-logos/microsoft-icon.svg';
+import logo2 from '../../assets/images/stock-logos/google-icon.svg';
+import logo3 from '../../assets/images/stock-logos/spotify-icon.svg';
+import logo4 from '../../assets/images/stock-logos/instagram-icon.svg';
+
 export default function CallAction() {
   return (
     <>
-      <div className="mb-spacing-6-x2">
-        <Grid container spacing={6}>
-          <Grid item lg={4}>
-            <Card className="card-box p-4">
-              <div className="text-center">
-                <div className="avatar-icon-wrapper rounded-circle m-0">
-                  <div className="d-inline-flex justify-content-center p-0 rounded-circle avatar-icon-wrapper bg-neutral-danger text-danger m-0 d-130">
-                    <FontAwesomeIcon
-                      icon={['fas', 'times']}
-                      className="d-flex align-self-center display-3"
-                    />
+      <Card className="mb-spacing-6-x2">
+        <Container className="py-3">
+          <Grid container spacing={0}>
+            <Grid item lg={6}>
+              <div className="d-flex py-4">
+                <div className="d-80 flex-shrink-0 rounded-circle btn-icon bg-secondary">
+                  <div className="d-40">
+                    <img alt="..." className="img-fit-container" src={logo1} />
                   </div>
                 </div>
-                <h4 className="font-weight-bold mt-4">Delete this entry?</h4>
-                <p className="mb-0 font-size-lg text-muted">
-                  You cannot undo this operation.
-                </p>
-                <div className="pt-4">
-                  <Button className="btn-neutral-secondary btn-pill mx-1">
-                    <span className="btn-wrapper--label">Cancel</span>
-                  </Button>
-                  <Button className="btn-danger btn-pill mx-1">
-                    <span className="btn-wrapper--label">Delete</span>
-                  </Button>
+                <div className="pt-2 pl-4">
+                  <a
+                    href="#/"
+                    onClick={(e) => e.preventDefault()}
+                    className="font-weight-bold d-flex align-items-center mb-2 d-flex"
+                  >
+                    <div className="font-size-lg">Microsoft</div>
+                    <div className="d-30 rounded-pill btn-icon bg-neutral-success font-size-xs text-success ml-2">
+                      <FontAwesomeIcon
+                        icon={['fas', 'check']}
+                        className="font-size-sm"
+                      />
+                    </div>
+                  </a>
+                  <p className="mb-0 text-second opacity-7">
+                    View any of the 5+ live previews we&#39;ve set up to learn
+                    why this dashboard template is the last one you&#39;ll ever
+                    need!
+                  </p>
                 </div>
               </div>
-            </Card>
-          </Grid>
-          <Grid item lg={4}>
-            <Card className="card-box p-4">
-              <div className="text-center">
-                <div className="avatar-icon-wrapper rounded-circle m-0">
-                  <div className="d-inline-flex justify-content-center p-0 rounded-circle avatar-icon-wrapper bg-neutral-success text-success m-0 d-130">
-                    <FontAwesomeIcon
-                      icon={['far', 'lightbulb']}
-                      className="d-flex align-self-center display-3"
-                    />
+            </Grid>
+            <Grid item lg={6}>
+              <div className="d-flex py-4">
+                <div className="d-80 flex-shrink-0 rounded-circle btn-icon bg-secondary">
+                  <div className="d-40">
+                    <img alt="..." className="img-fit-container" src={logo2} />
                   </div>
                 </div>
-                <h4 className="font-weight-bold mt-4">Really create this?</h4>
-                <p className="mb-0 font-size-lg text-muted">
-                  You can later review your options.
-                </p>
-                <div className="pt-4">
-                  <Button className="btn-neutral-dark btn-pill mx-1">
-                    <span className="btn-wrapper--label">Cancel</span>
-                  </Button>
-                  <Button className="btn-success btn-pill mx-1">
-                    <span className="btn-wrapper--label">Create</span>
-                  </Button>
+                <div className="pt-2 pl-4">
+                  <a
+                    href="#/"
+                    onClick={(e) => e.preventDefault()}
+                    className="font-weight-bold d-flex align-items-center mb-2 d-flex"
+                  >
+                    <div className="font-size-lg">Google</div>
+                    <div className="d-30 rounded-pill btn-icon bg-neutral-success font-size-xs text-success ml-2">
+                      <FontAwesomeIcon
+                        icon={['fas', 'check']}
+                        className="font-size-sm"
+                      />
+                    </div>
+                  </a>
+                  <p className="mb-0 text-second opacity-7">
+                    View any of the 5+ live previews we&#39;ve set up to learn
+                    why this dashboard template is the last one you&#39;ll ever
+                    need!
+                  </p>
                 </div>
               </div>
-            </Card>
-          </Grid>
-          <Grid item lg={4}>
-            <Card className="card-box p-4">
-              <div className="text-center">
-                <div className="avatar-icon-wrapper rounded-circle m-0">
-                  <div className="d-inline-flex justify-content-center p-0 rounded-circle avatar-icon-wrapper bg-neutral-first text-first m-0 d-130">
-                    <FontAwesomeIcon
-                      icon={['far', 'keyboard']}
-                      className="d-flex align-self-center display-3"
-                    />
+            </Grid>
+            <Grid item lg={6}>
+              <div className="d-flex py-4">
+                <div className="d-80 flex-shrink-0 rounded-circle btn-icon bg-secondary">
+                  <div className="d-40">
+                    <img alt="..." className="img-fit-container" src={logo3} />
                   </div>
                 </div>
-                <h4 className="font-weight-bold mt-4">Are you sure?</h4>
-                <p className="mb-0 text-black-50">
-                  You can change your mind later.
-                </p>
-                <div className="pt-4">
-                  <Button className="btn-neutral-secondary btn-pill text-danger mx-1">
-                    <span className="btn-wrapper--label">No</span>
-                  </Button>
-                  <Button className="btn-first btn-pill mx-1">
-                    <span className="btn-wrapper--label">Yes</span>
-                  </Button>
+                <div className="pt-2 pl-4">
+                  <a
+                    href="#/"
+                    onClick={(e) => e.preventDefault()}
+                    className="font-weight-bold d-flex align-items-center mb-2 d-flex"
+                  >
+                    <div className="font-size-lg">Spotify</div>
+                    <div className="d-30 rounded-pill btn-icon bg-neutral-danger font-size-xs text-danger ml-2">
+                      <FontAwesomeIcon
+                        icon={['fas', 'times']}
+                        className="font-size-sm"
+                      />
+                    </div>
+                  </a>
+                  <p className="mb-0 text-second opacity-7">
+                    View any of the 5+ live previews we&#39;ve set up to learn
+                    why this dashboard template is the last one you&#39;ll ever
+                    need!
+                  </p>
                 </div>
               </div>
-            </Card>
+            </Grid>
+            <Grid item lg={6}>
+              <div className="d-flex py-4">
+                <div className="d-80 flex-shrink-0 rounded-circle btn-icon bg-secondary">
+                  <div className="d-40">
+                    <img alt="..." className="img-fit-container" src={logo4} />
+                  </div>
+                </div>
+                <div className="pt-2 pl-4">
+                  <a
+                    href="#/"
+                    onClick={(e) => e.preventDefault()}
+                    className="font-weight-bold d-flex align-items-center mb-2 d-flex"
+                  >
+                    <div className="font-size-lg">Instagram</div>
+                    <div className="d-30 rounded-pill btn-icon bg-neutral-success font-size-xs text-success ml-2">
+                      <FontAwesomeIcon
+                        icon={['fas', 'check']}
+                        className="font-size-sm"
+                      />
+                    </div>
+                  </a>
+                  <p className="mb-0 text-second opacity-7">
+                    View any of the 5+ live previews we&#39;ve set up to learn
+                    why this dashboard template is the last one you&#39;ll ever
+                    need!
+                  </p>
+                </div>
+              </div>
+            </Grid>
           </Grid>
-        </Grid>
-      </div>
+        </Container>
+      </Card>
     </>
   );
 }
