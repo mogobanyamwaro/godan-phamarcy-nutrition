@@ -1,24 +1,55 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+
+import wordsToNumbers from 'words-to-numbers';
+import alanBtn from '@alan-ai/alan-sdk-web';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
+import './assets/base.scss';
+import Home from './pages/Home';
+import useStyles from './styles';
+
 function App() {
+  const [activeArticle, setActiveArticle] = useState(0);
+  const [newsArticles, setNewsArticles] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const classes = useStyles();
+
+  useEffect(() => {
+    alanBtn({
+      key:
+        '21f2caf98d09fecc5f8cc489906f97122e956eca572e1d8b807a3e2338fdd0dc/stage',
+      onCommand: ({ command, articles, number }) => {
+        if (command === 'newHeadlines') {
+          setNewsArticles(articles);
+          setActiveArticle(-1);
+        } else if (command === 'instructions') {
+          setIsOpen(true);
+        } else if (command === 'highlight') {
+          setActiveArticle((prevActiveArticle) => prevActiveArticle + 1);
+        } else if (command === 'open') {
+          const parsedNumber =
+            number.length > 2
+              ? wordsToNumbers(number, { fuzzy: true })
+              : number;
+          const article = articles[parsedNumber - 1];
+
+          if (parsedNumber > articles.length) {
+            alanBtn().playText('Please try that again...');
+          } else if (article) {
+            window.open(article.url, '_blank');
+            alanBtn().playText('Opening...');
+          } else {
+            alanBtn().playText('Please try that again...');
+          }
+        }
+      },
+    });
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Home />
+    </>
   );
 }
 
