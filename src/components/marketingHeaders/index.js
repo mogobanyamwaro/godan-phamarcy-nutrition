@@ -147,9 +147,9 @@ export default function Marketingheader3() {
                 />
               </div>
               <div className="app-nav-logo--text">
-                <span>General</span>
+                <span>Godan</span>
 
-                <b>bamburgh</b>
+                <b>Food Pharmacy</b>
               </div>
             </a>
           </div>
@@ -161,7 +161,7 @@ export default function Marketingheader3() {
                   href="#/"
                   onClick={(e) => e.preventDefault()}
                 >
-                  Pages
+                  Home
                   <span className="opacity-5 dropdown-arrow">
                     <FontAwesomeIcon icon={['fas', 'angle-down']} />
                   </span>
@@ -260,7 +260,7 @@ export default function Marketingheader3() {
                   onClick={(e) => e.preventDefault()}
                   className="rounded-sm"
                 >
-                  Landings
+                  About
                   <span className="opacity-5 dropdown-arrow">
                     <FontAwesomeIcon icon={['fas', 'angle-down']} />
                   </span>
@@ -287,9 +287,9 @@ export default function Marketingheader3() {
                               <BusinessCenterTwoToneIcon className="text-black-50" />
                               <div className="pl-3 text-black">
                                 <div className="font-weight-bold">General</div>
-                                <div className="text-black-50 font-size-sm">
+                                {/* <div className="text-black-50 font-size-sm">
                                   Multi-purpose user interface for dashboards
-                                </div>
+                                </div> */}
                               </div>
                             </div>
                           </ListItem>
@@ -307,9 +307,9 @@ export default function Marketingheader3() {
                                 <div className="font-weight-bold">
                                   Messenger
                                 </div>
-                                <div className="text-black-50 font-size-sm">
+                                {/* <div className="text-black-50 font-size-sm">
                                   Niche application UI for building chat windows
-                                </div>
+                                </div> */}
                               </div>
                             </div>
                           </ListItem>
@@ -325,10 +325,10 @@ export default function Marketingheader3() {
                               <GridOnTwoToneIcon className="text-black-50" />
                               <div className="pl-3 text-black">
                                 <div className="font-weight-bold">Commerce</div>
-                                <div className="text-black-50 font-size-sm">
+                                {/* <div className="text-black-50 font-size-sm">
                                   Build a commerce related app with this
                                   template
-                                </div>
+                                </div> */}
                               </div>
                             </div>
                           </ListItem>
@@ -341,7 +341,7 @@ export default function Marketingheader3() {
                           component="div"
                           className="nav-pills nav-neutral-success nav-lg flex-column p-0"
                         >
-                          <ListItem
+                          {/* <ListItem
                             component="a"
                             button
                             href="#/"
@@ -358,7 +358,7 @@ export default function Marketingheader3() {
                                 </div>
                               </div>
                             </div>
-                          </ListItem>
+                          </ListItem> */}
 
                           <ListItem
                             component="a"
@@ -376,10 +376,10 @@ export default function Marketingheader3() {
                                     Soon
                                   </span>
                                 </div>
-                                <div className="text-white-50 font-size-sm">
+                                {/* <div className="text-white-50 font-size-sm">
                                   Courses platform template to start development
                                   faster
-                                </div>
+                                </div> */}
                               </div>
                             </div>
                           </ListItem>
@@ -400,10 +400,10 @@ export default function Marketingheader3() {
                                     Soon
                                   </span>
                                 </div>
-                                <div className="text-white-50 font-size-sm">
+                                {/* <div className="text-white-50 font-size-sm">
                                   Financial dashboard template inspired by
                                   banking apps
-                                </div>
+                                </div> */}
                               </div>
                             </div>
                           </ListItem>
@@ -419,7 +419,7 @@ export default function Marketingheader3() {
                   href="#/"
                   onClick={(e) => e.preventDefault()}
                 >
-                  Blocks
+                  Contact
                 </a>
               </li>
             </ul>

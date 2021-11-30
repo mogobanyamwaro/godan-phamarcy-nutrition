@@ -6,7 +6,7 @@ function Home() {
   return (
     <div>
       <HeroSection />
-      <CallAction />
+      {/* <CallAction /> */}
       <Footer />
     </div>
   );

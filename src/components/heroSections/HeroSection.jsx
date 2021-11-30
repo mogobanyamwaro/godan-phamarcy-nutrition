@@ -41,17 +41,9 @@ export default function HeroSection() {
                   >
                     <div className="text-center px-4 px-lg-0 text-lg-left">
                       <h2 className="display-3 font-weight-bold">
-                        Bamburgh React Admin Dashboard with Material-UI PRO
+                        Godan Food Pharmacy
                       </h2>
-                      <p className="font-size-xl py-3 text-white-50">
-                        Premium admin template powered by the most popular UI
-                        components framework available for React: Material-UI.
-                        Features hundreds of examples making web development
-                        fast and easy. Start from one of the individual apps
-                        included or from the general dashboard and build
-                        beautiful scalable applications and presentation
-                        websites.
-                      </p>
+                      <p className="font-size-xl py-3 text-white-50"></p>
                       <div className="pt-3">
                         <Button
                           href="#/"
@@ -59,9 +51,7 @@ export default function HeroSection() {
                           size="large"
                           className="btn-pill shadow-second-sm btn-success"
                         >
-                          <span className="btn-wrapper--label">
-                            View all partners
-                          </span>
+                          <span className="btn-wrapper--label"></span>
                           <span className="btn-wrapper--icon">
                             <FontAwesomeIcon icon={['fas', 'arrow-right']} />
                           </span>
@@ -72,7 +62,7 @@ export default function HeroSection() {
                           size="large"
                           className="bg-white-10 text-white btn-pill ml-3"
                         >
-                          <span>View details</span>
+                          {/* <span>View details</span> */}
                         </Button>
                       </div>
                     </div>
@@ -90,14 +80,14 @@ export default function HeroSection() {
                           onClick={(e) => e.preventDefault()}
                           className="card bg-white mt-4 shadow-sm-dark card-box-hover-rise mb-5"
                         >
-                          <img
+                          {/* <img
                             src={stock1}
                             className="card-img-top"
                             alt="..."
                           />
                           <div className="p-3 bg-secondary rounded text-center p-xl-4 d-flex align-items-center justify-content-center">
                             <img src={logo1} alt="..." style={{ height: 25 }} />
-                          </div>
+                          </div> */}
                         </a>
                       </Grid>
                       <Grid item md={6} lg={4}>
@@ -106,14 +96,14 @@ export default function HeroSection() {
                           onClick={(e) => e.preventDefault()}
                           className="card bg-white shadow-sm-dark card-box-hover-rise mb-5"
                         >
-                          <img
+                          {/* <img
                             src={stock2}
                             className="card-img-top"
                             alt="..."
                           />
                           <div className="p-3 bg-secondary rounded text-center p-xl-4 d-flex align-items-center justify-content-center">
                             <img src={logo2} alt="..." style={{ height: 25 }} />
-                          </div>
+                          </div> */}
                         </a>
                       </Grid>
                       <Grid item md={6} lg={6}>
@@ -123,7 +113,7 @@ export default function HeroSection() {
                             onClick={(e) => e.preventDefault()}
                             className="card bg-white shadow-sm-dark card-box-hover-rise mb-5"
                           >
-                            <img
+                            {/* <img
                               src={stock3}
                               className="card-img-top"
                               alt="..."
@@ -134,7 +124,7 @@ export default function HeroSection() {
                                 alt="..."
                                 style={{ height: 25 }}
                               />
-                            </div>
+                            </div> */}
                           </a>
                         </div>
                       </Grid>
@@ -144,14 +134,14 @@ export default function HeroSection() {
                           onClick={(e) => e.preventDefault()}
                           className="card bg-white shadow-sm-dark card-box-hover-rise mb-5"
                         >
-                          <img
+                          {/* <img
                             src={stock4}
                             className="card-img-top"
                             alt="..."
                           />
                           <div className="p-3 bg-secondary rounded text-center p-xl-4 d-flex align-items-center justify-content-center">
                             <img src={logo4} alt="..." style={{ height: 25 }} />
-                          </div>
+                          </div> */}
                         </a>
                       </Grid>
                     </Grid>

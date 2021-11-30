@@ -24,16 +24,13 @@ export default function Footer() {
                       />
                     </div>
                     <div className="app-nav-logo--text">
-                      <span>General</span>
+                      <span>Godan</span>
 
-                      <b>bamburgh</b>
+                      <b>Food Pharmacy</b>
                     </div>
                   </a>
                 </div>
-                <p className="my-4 text-white-50">
-                  I will give you a complete account of the system, and expound
-                  the actual teachings.
-                </p>
+                <p className="my-4 text-white-50"></p>
                 <div>
                   <Button
                     href="#/"
@@ -134,7 +131,7 @@ export default function Footer() {
                     </List>
                   </div>
                 </Grid>
-                <Grid item md={4}>
+                {/* <Grid item md={4}>
                   <div className="pl-0 pl-lg-3">
                     <h6 className="text-white font-weight-bold mb-3">
                       UI Themes
@@ -172,7 +169,7 @@ export default function Footer() {
                       </ListItem>
                     </List>
                   </div>
-                </Grid>
+                </Grid> */}
               </Grid>
             </Grid>
           </Grid>
